@@ -8,14 +8,18 @@
 
 Question 1: Why are RESTful APIs scalable?
 
-Answer: RESTful APIs are scalable because they are stateless. This means that the server does not need to remember anything about the client. This allows the server to handle multiple requests at the same time. It also allows more than one server to handle requests.
+Answer: RESTful APIs are scalable because they are designed to be stateless, meaning that each request contains all the necessary information to be processed, and the server does not need to keep track of the client's state. This allows the API to handle a large number of requests without being burdened by session management or resource allocation. Additionally, RESTful APIs use standard HTTP methods and can be cached, further improving performance and scalability.
 
 
 Question 2: According to the definition of "resources" provided in the AWS article above, What are the resources the mail server is providing to clients?
 
-Answer: the mail is providing mail entries to clients.
+Answer: The resources the mail server is providing to clients are mailboxes, messages, and the ability to send and receive emails.
 
 
 Question 3: What is one common REST Method not used in our mail server? How could we extend our mail server to use this method?
 
-Answer: We didn't use PUT. We could extend our mail server to use PUT by adding a new method that would allow us to update a mail entry.
+Answer: One common REST method not used in our mail server is PATCH. We could use it to partially update an existing email by modifying specific fields.
+
+Question 4: API keys are used to authenticate and control access to RESTful APIs by identifying the client making the request. They serve the purpose of enhancing security, managing usage limits, and enabling billing for API usage.
+
+Answer: https://cloud.google.com/endpoints/docs/openapi/when-why-api-key
